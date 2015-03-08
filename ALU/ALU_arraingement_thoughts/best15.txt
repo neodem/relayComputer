@@ -1,0 +1,113 @@
+               --------------                                 --------------
+               |7          6|-or3c:5:VCC->                    |7          6|
+               |8  and5c   5|<-inv5c:7:OFF-     -and5c:5:VCC->|8  inv5c   5|-and6c:5:VCC->
+               |9          4|                                 |9          4|
+               |10         3|                                 |10         3|
+               |11         2|                                 |11         2|
+               |12         1|<-and5b:6:ON-                    |12         1|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |7          6|                                 |7          6|
+               |8   or3c   5|<-and5c:6:ON-                    |8   or3d   5|<-and6c:6:ON-
+               |9          4|                                 |9          4|
+               |10         3|                                 |10         3|
+               |11         2|                                 |11         2|
+               |12         1|                                 |12         1|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |7          6|-and5b:1:IN->                    |7          6|-or3d:5:VCC->
+               |8  and5a   5|                                 |8  and6c   5|<-inv5c:5:VCC-
+               |9          4|                                 |9          4|
+               |10         3|                                 |10         3|
+               |11         2|                                 |11         2|
+               |12         1|                                 |12         1|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |7          6|-and5c:1:IN->      -and6c:12:IN->|1         12|
+               |8  and5b   5|-and6b:5:VCC->     <-and5b:5:VCC-|2  and6b  11|
+               |9          4|                                 |3    I    10|
+               |10         3|                                 |4          9|
+               |11         2|                                 |5          8|
+               |12         1|<-and5a:6:ON-       <-and6a:6:ON-|6          7|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |1         12|                    -and6b:1:IN->|1         12|
+ <-inv3b:5:VCC-|2  inv4b  11|-and4b:5:VCC->                   |2  and6a  11|
+               |3    I    10|                                 |3    I    10|
+               |4          9|                                 |4          9|
+               |5          8|                                 |5          8|
+               |6          7|                                 |6          7|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |7          6|-and4c:12:IN->                   |7          6|-or3b:5:VCC->
+               |8  and4b   5|<-inv4b:7:OFF-                   |8  and4c   5|<-inv3c:5:VCC-
+               |9          4|                                 |9          4|
+               |10         3|                                 |10         3|
+               |11         2|                                 |11         2|
+               |12         1|<-and4a:6:ON-                    |12         1|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |7          6|-and4b:1:IN->                    |7          6|
+               |8  and4a   5|                   -and3c:5:VCC->|8  inv3c   5|-and4c:5:VCC->
+               |9          4|                                 |9          4|
+               |10         3|                                 |10         3|
+               |11         2|                                 |11         2|
+               |12         1|                                 |12         1|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |1         12|                                 |1         12|
+ -inv4b:5:VCC->|2  inv3b  11|-and3b:5:VCC->      <-and3c:6:ON-|2  or3a   11|
+               |3    I    10|                                 |3    I    10|
+               |4          9|                                 |4          9|
+               |5          8|                                 |5          8|
+               |6          7|                                 |6          7|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |7          6|-and3c:1:IN->       -or3a:5:VCC->|1         12|
+               |8  and3b   5|<-inv3b:7:OFF-     <-inv3c:7:OFF-|2  and3c  11|
+               |9          4|                                 |3    I    10|
+               |10         3|                                 |4          9|
+               |11         2|                                 |5          8|
+               |12         1|<-and3a:6:ON-       <-and3b:6:ON-|6          7|
+               --------------                                 --------------
+
+               --------------                                 --------------
+               |7          6|-and3b:1:IN->                    |7          6|
+               |8  and3a   5|                                 |8   or3b   5|<-and4c:6:ON-
+               |9          4|                                 |9          4|
+               |10         3|                                 |10         3|
+               |11         2|                                 |11         2|
+               |12         1|                                 |12         1|
+               --------------                                 --------------
+
+Size = 15
+Connection [inv3c:5:VCC -> inv5c:5:VCC] = 5
+Connection [inv3b:5:VCC -> inv4b:5:VCC] = 2
+Connection [inv4b:5:VCC -> and5b:5:VCC] = 1
+Connection [and4c:6:ON -> or3b:5:VCC] = 3
+Connection [and5c:6:ON -> or3c:5:VCC] = 0
+Connection [and4a:6:ON -> and4b:1:IN(alt:12)] = 0
+Connection [and6a:6:ON -> and6b:1:IN(alt:12)] = 0
+Connection [inv3c:7:OFF -> and3c:5:VCC] = 1
+Connection [and5a:6:ON -> and5b:1:IN(alt:12)] = 0
+Connection [inv4b:7:OFF -> and4b:5:VCC] = 0
+Connection [inv5c:7:OFF -> and5c:5:VCC] = 0
+Connection [and4b:6:ON -> and4c:12:IN(alt:1)] = 0
+Connection [and5b:5:VCC -> and6b:5:VCC] = 0
+Connection [and3b:6:ON -> and3c:1:IN(alt:12)] = 0
+Connection [and6c:6:ON -> or3d:5:VCC] = 0
+Connection [and6b:6:ON -> and6c:12:IN(alt:1)] = 0
+Connection [inv3b:7:OFF -> and3b:5:VCC] = 0
+Connection [and3a:6:ON -> and3b:1:IN(alt:12)] = 0
+Connection [and3c:6:ON -> or3a:5:VCC] = 0
+Connection [and5b:6:ON -> and5c:1:IN(alt:12)] = 2
+Connection [inv3c:5:VCC -> and4c:5:VCC] = 0
+Connection [inv5c:5:VCC -> and6c:5:VCC] = 1

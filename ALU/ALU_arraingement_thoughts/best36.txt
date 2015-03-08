@@ -1,0 +1,188 @@
+               --------------                                 --------------                                 --------------                                 --------------                  
+  power:VCC(1)-|1         12|                                 |7          6|                                 |1         12|-and6b:ON(6)        power:VCC(1)-|1         12|                  
+               |2  or2a   11|                    power:GND(2)-|8   or3b   5|-and4c:ON(6)                     |2  and6c  11|                                 |2  inv6c  11|                  
+               |3    I    10|                                 |9          4|                                 |3    I    10|                                 |3    I    10|                  
+               |4          9|                                 |10         3|                                 |4          9|                                 |4          9|                  
+     data:A(1)-|5          8|-power:GND(2)                    |11         2|                    inv6c:OFF(7)-|5          8|-power:GND(2)      control:S1(2)-|5          8|-power:GND(2)     
+  and3a:VCC(5)-|6          7|                                 |12         1|-power:VCC(1)        or3d:VCC(5)-|6          7|                                 |6          7|-and6c:VCC(5)     
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                                 --------------                                 --------------                  
+               |7          6|-and3b:IN(1)                     |7          6|-or3b:VCC(5)                     |7          6|                    power:VCC(1)-|1         12|                  
+  power:GND(2)-|8  and3a   5|-or2a:ON(6)         power:GND(2)-|8  and4c   5|-control:S1(2)      power:GND(2)-|8   or3d   5|-and6c:ON(6)                     |2  or2b   11|                  
+               |9          4|                                 |9          4|                                 |9          4|                                 |3    I    10|                  
+               |10         3|                                 |10         3|                                 |10         3|                                 |4          9|                  
+               |11         2|                                 |11         2|                                 |11         2|                     xor3b:IN(1)-|5          8|-power:GND(2)     
+               |12         1|-power:VCC(1)                    |12         1|-and4b:ON(6)                     |12         1|-power:VCC(1)                    |6          7|                  
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                                 --------------                                 --------------                  
+               |7          6|-and3c:IN(1)                     |7          6|-and4c:IN(1)        power:VCC(1)-|1         12|                    and2b:VCC(5)-|1         12|-xor1b:VCC(5)     
+  power:GND(2)-|8  and3b   5|-inv3b:OFF(7)       power:GND(2)-|8  and4b   5|-control:S0(1)                   |2  and4a  11|                                 |2  xor3b  11|                  
+               |9          4|                                 |9          4|                                 |3    I    10|                                 |3    I    10|                  
+               |10         3|                                 |10         3|                                 |4          9|                                 |4          9|                  
+               |11         2|                                 |11         2|                     xor1b:IN(1)-|5          8|-power:GND(2)       data:Binv(3)-|5          8|-power:GND(2)     
+               |12         1|-and3a:ON(6)                     |12         1|-and4a:ON(6)         and4b:IN(1)-|6          7|                    xor3a:OFF(7)-|6          7|-xor3a:ON(6)      
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                                 --------------                                 --------------                  
+               |7          6|-or3a:VCC(5)                     |7          6|-and6c:IN(12)       power:VCC(1)-|1         12|                     xor3b:ON(6)-|7          6|-xor3b:OFF(7)     
+  power:GND(2)-|8  and3c   5|-control:S1(2)      power:GND(2)-|8  and6b   5|-inv6b:OFF(7)                    |2  inv6b  11|                    power:GND(2)-|8  xor3a   5|-data:B(2)        
+               |9          4|                                 |9          4|                                 |3    I    10|                                 |9          4|                  
+               |10         3|                                 |10         3|                                 |4          9|                                 |10         3|                  
+               |11         2|                                 |11         2|                   control:S0(1)-|5          8|-power:GND(2)                    |11         2|                  
+               |12         1|-and3b:ON(6)                     |12         1|-and6a:ON(6)                     |6          7|-and6b:VCC(5)                    |12         1|-power:VCC(1)     
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                                 --------------                                 --------------                  
+               |7          6|                    power:VCC(1)-|1         12|                    xor2b:VCC(5)-|1         12|                     xor1b:ON(6)-|7          6|-xor1b:OFF(7)     
+  power:GND(2)-|8   or3a   5|-and3c:ON(6)                     |2  inv5c  11|                                 |2  xor1b  11|                    power:GND(2)-|8  xor1a   5|-data:A(1)        
+               |9          4|                                 |3    I    10|                                 |3    I    10|                                 |9          4|                  
+               |10         3|                                 |4          9|                                 |4          9|                                 |10         3|                  
+               |11         2|                   control:S1(2)-|5          8|-power:GND(2)       xor3b:IN(12)-|5          8|-power:GND(2)                    |11         2|                  
+               |12         1|-power:VCC(1)                    |6          7|-and5c:VCC(5)       xor1a:OFF(7)-|6          7|-xor1a:ON(6)                     |12         1|-power:VCC(1)     
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                                 --------------                                 --------------                  
+  and3b:VCC(5)-|7          6|                    power:VCC(1)-|1         12|                                 |1         12|-and6a:VCC(5)                    |7          6|                  
+  power:GND(2)-|8  inv3b   5|-control:S0(1)                   |2  and6a  11|                                 |2  xor2b  11|                    power:GND(2)-|8   or1b   5|-and2b:ON(6)      
+               |9          4|                                 |3    I    10|                                 |3    I    10|                                 |9          4|                  
+               |10         3|                                 |4          9|                                 |4          9|                                 |10         3|                  
+               |11         2|                    xor2b:IN(12)-|5          8|-power:GND(2)        xor1b:IN(1)-|5          8|-power:GND(2)                    |11         2|                  
+               |12         1|-power:VCC(1)        and6b:IN(1)-|6          7|                    xor2a:OFF(7)-|6          7|-xor2a:ON(6)                     |12         1|-power:VCC(1)     
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                                 --------------                                 --------------                  
+               |7          6|                     and1a:ON(6)-|1         12|                    power:VCC(1)-|1         12|                                 |7          6|-and5a:VCC(5)     
+  power:GND(2)-|8   or1a   5|-and1b:ON(6)                     |2  and1b  11|                                 |2  and1a  11|                    power:GND(2)-|8  and2b   5|-xor3b:IN(1)      
+               |9          4|                                 |3    I    10|                                 |3    I    10|                                 |9          4|                  
+               |10         3|                                 |4          9|                                 |4          9|                                 |10         3|                  
+               |11         2|                     data:Cin(4)-|5          8|-power:GND(2)        xor1b:IN(1)-|5          8|-power:GND(2)                    |11         2|                  
+               |12         1|-power:VCC(1)        or1a:VCC(5)-|6          7|                     and1b:IN(1)-|6          7|                                 |12         1|-and2a:ON(6)      
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                                 --------------                                 --------------                  
+               |7          6|-and5b:IN(1)        power:VCC(1)-|1         12|                     xor2b:ON(6)-|7          6|-xor2b:OFF(7)                    |7          6|-and2b:IN(1)      
+  power:GND(2)-|8  and5a   5|-and2b:ON(6)                     |2  or3c   11|                    power:GND(2)-|8  xor2a   5|-data:Cin(4)        power:GND(2)-|8  and2a   5|-data:A(1)        
+               |9          4|                                 |3    I    10|                                 |9          4|                                 |9          4|                  
+               |10         3|                                 |4          9|                                 |10         3|                                 |10         3|                  
+               |11         2|                     and5c:ON(6)-|5          8|-power:GND(2)                    |11         2|                                 |11         2|                  
+               |12         1|-power:VCC(1)                    |6          7|                                 |12         1|-power:VCC(1)                    |12         1|-power:VCC(1)     
+               --------------                                 --------------                                 --------------                                 --------------                  
+
+               --------------                                 --------------                  
+               |7          6|-and5c:IN(12)                    |7          6|-or3c:VCC(5)      
+  power:GND(2)-|8  and5b   5|-control:S0(1)      power:GND(2)-|8  and5c   5|-inv5c:OFF(7)     
+               |9          4|                                 |9          4|                  
+               |10         3|                                 |10         3|                  
+               |11         2|                                 |11         2|                  
+               |12         1|-and5a:ON(6)         and5b:ON(6)-|12         1|                  
+               --------------                                 --------------                  
+
+
+Size = 36
+Connection [and2b:ON(6) -> and5a:VCC(5)] = 5
+Connection [and6b:ON(6) -> and6c:IN(12)(alt:1)] = 4
+Connection [inv5c:OFF(7) -> and5c:VCC(5)] = 4
+Connection [xor3b:IN(1)(alt:12) -> and2b:VCC(5)] = 3
+Connection [xor3b:IN(12)(alt:1) -> xor1b:VCC(5)] = 3
+Connection [inv3b:OFF(7) -> and3b:VCC(5)] = 3
+Connection [xor2a:OFF(7) -> xor2b:ON(6)] = 2
+Connection [xor2a:ON(6) -> xor2b:OFF(7)] = 2
+Connection [xor1a:ON(6) -> xor1b:OFF(7)] = 2
+Connection [xor3a:ON(6) -> xor3b:OFF(7)] = 1
+Connection [xor1b:IN(1)(alt:12) -> and1a:VCC(5)] = 1
+Connection [and1a:ON(6) -> and1b:IN(1)(alt:12)] = 1
+Connection [xor1b:IN(1)(alt:12) -> and4a:VCC(5)] = 1
+Connection [and6a:ON(6) -> and6b:IN(1)(alt:12)] = 1
+Connection [and1b:ON(6) -> or1a:VCC(5)] = 1
+Connection [xor3a:OFF(7) -> xor3b:ON(6)] = 1
+Connection [and4a:ON(6) -> and4b:IN(1)(alt:12)] = 1
+Connection [power:VCC(1) -> or3b:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> or1a:GND(8)] = 0
+Connection [power:GND(2) -> and2b:GND(8)] = 0
+Connection [data:A(1) -> and2a:VCC(5)] = 0
+Connection [and3a:ON(6) -> and3b:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> inv6c:GND(8)] = 0
+Connection [power:VCC(1) -> or3d:IN(1)(alt:12)] = 0
+Connection [control:S0(1) -> and4b:VCC(5)] = 0
+Connection [power:VCC(1) -> inv6b:IN(1)(alt:12)] = 0
+Connection [data:Binv(3) -> xor3b:VCC(5)] = 0
+Connection [control:S1(2) -> inv6c:VCC(5)] = 0
+Connection [xor2b:IN(12)(alt:1) -> and6a:VCC(5)] = 0
+Connection [xor1b:IN(1)(alt:12) -> xor2b:VCC(5)] = 0
+Connection [power:VCC(1) -> and1a:IN(1)(alt:12)] = 0
+Connection [data:A(1) -> or2a:VCC(5)] = 0
+Connection [control:S1(2) -> inv5c:VCC(5)] = 0
+Connection [power:GND(2) -> xor1a:GND(8)] = 0
+Connection [power:VCC(1) -> or2b:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> and4b:GND(8)] = 0
+Connection [power:GND(2) -> and6a:GND(8)] = 0
+Connection [power:VCC(1) -> and4a:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> and5c:GND(8)] = 0
+Connection [power:GND(2) -> or2b:GND(8)] = 0
+Connection [power:GND(2) -> and2a:GND(8)] = 0
+Connection [power:GND(2) -> and5b:GND(8)] = 0
+Connection [power:VCC(1) -> and3a:IN(1)(alt:12)] = 0
+Connection [power:VCC(1) -> and6a:IN(1)(alt:12)] = 0
+Connection [and4c:ON(6) -> or3b:VCC(5)] = 0
+Connection [power:GND(2) -> or3b:GND(8)] = 0
+Connection [and5c:ON(6) -> or3c:VCC(5)] = 0
+Connection [power:VCC(1) -> inv5c:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> or2a:GND(8)] = 0
+Connection [power:GND(2) -> and1b:GND(8)] = 0
+Connection [data:Cin(4) -> xor2a:VCC(5)] = 0
+Connection [power:VCC(1) -> and2a:IN(1)(alt:12)] = 0
+Connection [inv6c:OFF(7) -> and6c:VCC(5)] = 0
+Connection [and2a:ON(6) -> and2b:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> and6b:GND(8)] = 0
+Connection [power:GND(2) -> inv3b:GND(8)] = 0
+Connection [power:GND(2) -> and3a:GND(8)] = 0
+Connection [power:GND(2) -> or1b:GND(8)] = 0
+Connection [and3c:ON(6) -> or3a:VCC(5)] = 0
+Connection [power:GND(2) -> inv6b:GND(8)] = 0
+Connection [and2b:ON(6) -> or1b:VCC(5)] = 0
+Connection [control:S1(2) -> and3c:VCC(5)] = 0
+Connection [and4b:ON(6) -> and4c:IN(1)(alt:12)] = 0
+Connection [power:VCC(1) -> or2a:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> and4c:GND(8)] = 0
+Connection [power:GND(2) -> xor1b:GND(8)] = 0
+Connection [power:GND(2) -> and5a:GND(8)] = 0
+Connection [power:GND(2) -> or3d:GND(8)] = 0
+Connection [xor3b:IN(1)(alt:12) -> or2b:VCC(5)] = 0
+Connection [power:GND(2) -> and3b:GND(8)] = 0
+Connection [power:GND(2) -> xor2a:GND(8)] = 0
+Connection [power:VCC(1) -> inv6c:IN(1)(alt:12)] = 0
+Connection [and3b:ON(6) -> and3c:IN(1)(alt:12)] = 0
+Connection [data:Cin(4) -> and1b:VCC(5)] = 0
+Connection [power:GND(2) -> xor3b:GND(8)] = 0
+Connection [power:VCC(1) -> xor2a:IN(1)(alt:12)] = 0
+Connection [power:VCC(1) -> or3a:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> and3c:GND(8)] = 0
+Connection [inv6b:OFF(7) -> and6b:VCC(5)] = 0
+Connection [power:VCC(1) -> or1b:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> or3c:GND(8)] = 0
+Connection [power:GND(2) -> and6c:GND(8)] = 0
+Connection [power:VCC(1) -> inv3b:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> or3a:GND(8)] = 0
+Connection [control:S1(2) -> and4c:VCC(5)] = 0
+Connection [control:S0(1) -> inv3b:VCC(5)] = 0
+Connection [power:VCC(1) -> or1a:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> inv5c:GND(8)] = 0
+Connection [data:A(1) -> xor1a:VCC(5)] = 0
+Connection [power:GND(2) -> xor2b:GND(8)] = 0
+Connection [power:GND(2) -> xor3a:GND(8)] = 0
+Connection [power:VCC(1) -> or3c:IN(1)(alt:12)] = 0
+Connection [and6c:ON(6) -> or3d:VCC(5)] = 0
+Connection [and5b:ON(6) -> and5c:IN(12)(alt:1)] = 0
+Connection [or2a:ON(6) -> and3a:VCC(5)] = 0
+Connection [and5a:ON(6) -> and5b:IN(1)(alt:12)] = 0
+Connection [control:S0(1) -> and5b:VCC(5)] = 0
+Connection [power:VCC(1) -> and5a:IN(1)(alt:12)] = 0
+Connection [power:VCC(1) -> xor3a:IN(1)(alt:12)] = 0
+Connection [power:GND(2) -> and1a:GND(8)] = 0
+Connection [power:VCC(1) -> xor1a:IN(1)(alt:12)] = 0
+Connection [control:S0(1) -> inv6b:VCC(5)] = 0
+Connection [power:GND(2) -> and4a:GND(8)] = 0
+Connection [xor1a:OFF(7) -> xor1b:ON(6)] = 0
+Connection [data:B(2) -> xor3a:VCC(5)] = 0
