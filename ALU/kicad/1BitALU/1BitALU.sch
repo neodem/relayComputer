@@ -30,16 +30,16 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:1BitALU-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 6
 Title "Relay Computer - 1 Bit ALU"
-Date "8 mar 2015"
-Rev "1.5"
-Comp "Vincent Fumo"
-Comment1 ""
+Date "Tuesday, March 10, 2015"
+Rev "1.6"
+Comp "http://vfumo.info"
+Comment1 "Vincent E. Fumo II"
 Comment2 ""
 Comment3 ""
 Comment4 ""

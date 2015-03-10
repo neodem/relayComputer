@@ -30,16 +30,16 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:1BitALU-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 6
 Title "Relay Computer - 1 Bit ALU"
-Date "8 mar 2015"
-Rev "1.5"
-Comp "Vincent Fumo"
-Comment1 ""
+Date "Tuesday, March 10, 2015"
+Rev "1.6"
+Comp "http://vfumo.info"
+Comment1 "Vincent E. Fumo II"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -80,18 +80,18 @@ $EndComp
 $Comp
 L GND #PWR07
 U 1 1 54D012DC
-P 4450 3400
-F 0 "#PWR07" H 4450 3400 30  0001 C CNN
-F 1 "GND" H 4450 3330 30  0001 C CNN
-F 2 "" H 4450 3400 60  0000 C CNN
-F 3 "" H 4450 3400 60  0000 C CNN
-	1    4450 3400
+P 4100 3300
+F 0 "#PWR07" H 4100 3300 30  0001 C CNN
+F 1 "GND" H 4100 3230 30  0001 C CNN
+F 2 "" H 4100 3300 60  0000 C CNN
+F 3 "" H 4100 3300 60  0000 C CNN
+	1    4100 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1800 3400 1800 3500
 Wire Wire Line
-	4100 3100 4450 3400
+	4100 3100 4100 3300
 $Comp
 L +5V #PWR08
 U 1 1 54D01449
@@ -154,12 +154,12 @@ $EndComp
 $Comp
 L +5V #PWR011
 U 1 1 54D016DF
-P 7850 2200
-F 0 "#PWR011" H 7850 2290 20  0001 C CNN
-F 1 "+5V" H 7850 2290 30  0000 C CNN
-F 2 "" H 7850 2200 60  0000 C CNN
-F 3 "" H 7850 2200 60  0000 C CNN
-	1    7850 2200
+P 7900 2600
+F 0 "#PWR011" H 7900 2690 20  0001 C CNN
+F 1 "+5V" H 7900 2690 30  0000 C CNN
+F 2 "" H 7900 2600 60  0000 C CNN
+F 3 "" H 7900 2600 60  0000 C CNN
+	1    7900 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -237,10 +237,6 @@ Wire Wire Line
 	7900 4100 9100 4100
 Wire Wire Line
 	9100 5600 9100 5500
-Wire Wire Line
-	7850 2200 7850 2250
-Wire Wire Line
-	7850 2250 7750 2650
 Wire Wire Line
 	5150 3600 5850 3600
 Wire Wire Line
@@ -325,4 +321,8 @@ Text GLabel 4400 1700 2    60   Input ~ 0
 A
 Text GLabel 2100 1800 2    60   Input ~ 0
 B Actual
+Wire Wire Line
+	7750 2650 7900 2650
+Wire Wire Line
+	7900 2650 7900 2600
 $EndSCHEMATC

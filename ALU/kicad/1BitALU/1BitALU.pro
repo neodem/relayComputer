@@ -1,6 +1,6 @@
-update=3/8/2015 7:32:49 PM
+update=3/10/2015 6:20:39 PM
 version=1
-last_client=eeschema
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -85,3 +85,16 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
