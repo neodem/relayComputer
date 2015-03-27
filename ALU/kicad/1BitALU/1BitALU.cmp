@@ -1,388 +1,388 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 3/8/2015 4:50:26 PM
+Cmp-Mod V01 Created by Cvpcb (2014-12-04 BZR 5312)-product   date = 3/26/2015 9:25:53 PM
 
 BeginCmp
 TimeStamp = /54FCDBA0;
 Reference = D1;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FCDBAF;
 Reference = D2;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FCDBBE;
 Reference = D3;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FCDBCD;
 Reference = D4;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FCDBDC;
 Reference = D5;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FCDBEB;
 Reference = D6;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FCDBFA;
 Reference = D7;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FCDC09;
 Reference = D8;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /55010347;
 Reference = D9;
 ValeurCmp = LED;
-IdModule  = LED-3MM;
+IdModule  = custom:90LED;
 EndCmp
 
 BeginCmp
 TimeStamp = /55002FCF;
 Reference = P1;
 ValeurCmp = CONN_6;
-IdModule  = PIN_ARRAY-6X1;
+IdModule  = Socket_Strips:Socket_Strip_Angled_1x06;
 EndCmp
 
 BeginCmp
 TimeStamp = /550030A2;
 Reference = P2;
 ValeurCmp = CONN_2;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = Socket_Strips:Socket_Strip_Angled_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /55010B4A;
 Reference = P3;
 ValeurCmp = Power;
-IdModule  = PIN_ARRAY_2X1;
+IdModule  = Socket_Strips:Socket_Strip_Angled_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FE8A82;
 Reference = R1;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FE99B1;
 Reference = R2;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FE9B33;
 Reference = R3;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FE9A15;
 Reference = R4;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FEA9C2;
 Reference = R5;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FEAA26;
 Reference = R6;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FEAA8A;
 Reference = R7;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54FEAAEE;
 Reference = R8;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /55010356;
 Reference = R9;
 ValeurCmp = 100 Ohm;
-IdModule  = R4;
+IdModule  = Discret:R4;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A29A;
 Reference = U1;
 ValeurCmp = xor3a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A2C2;
 Reference = U2;
 ValeurCmp = and2a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A2B3;
 Reference = U3;
 ValeurCmp = xor3b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A2D1;
 Reference = U4;
 ValeurCmp = and2b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A2FE;
 Reference = U5;
 ValeurCmp = or1b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A2E0;
 Reference = U6;
 ValeurCmp = and1a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A2EF;
 Reference = U7;
 ValeurCmp = and1b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2A284/54D2A30D;
 Reference = U8;
 ValeurCmp = or1a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D1564E/54D011C3;
 Reference = U9;
 ValeurCmp = or2b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D1564E/54D01637;
 Reference = U10;
 ValeurCmp = and3a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D1564E/54D011FE;
 Reference = U11;
 ValeurCmp = or2a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D1564E/54D01646;
 Reference = U12;
 ValeurCmp = and3b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D1564E/54D01673;
 Reference = U13;
 ValeurCmp = inv3b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D1564E/54D01655;
 Reference = U14;
 ValeurCmp = and3c;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D1564E/54D01664;
 Reference = U15;
 ValeurCmp = or3a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CB75;
 Reference = U16;
 ValeurCmp = xor1b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CB84;
 Reference = U17;
 ValeurCmp = xor1a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CBCF;
 Reference = U18;
 ValeurCmp = xor2b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CB93;
 Reference = U19;
 ValeurCmp = and4a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CBDE;
 Reference = U20;
 ValeurCmp = xor2a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CBA2;
 Reference = U21;
 ValeurCmp = and4b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CBB1;
 Reference = U22;
 ValeurCmp = and4c;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2D6CC/54D2CBC0;
 Reference = U23;
 ValeurCmp = or3b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2DB4A/54D2DBF8;
 Reference = U24;
 ValeurCmp = and5a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2DB4A/54D2DC07;
 Reference = U25;
 ValeurCmp = and5b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2DB4A/54D2DC25;
 Reference = U26;
 ValeurCmp = inv5c;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2DB4A/54D2DC16;
 Reference = U27;
 ValeurCmp = and5c;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2DB4A/54D2DC34;
 Reference = U28;
 ValeurCmp = or3c;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2F582/54D2F5D5;
 Reference = U29;
 ValeurCmp = and6a;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2F582/54D2F602;
 Reference = U30;
 ValeurCmp = inv6b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2F582/54D2F5E4;
 Reference = U31;
 ValeurCmp = and6b;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2F582/54D2F611;
 Reference = U32;
 ValeurCmp = inv6c;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2F582/54D2F5F3;
 Reference = U33;
 ValeurCmp = and6c;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 BeginCmp
 TimeStamp = /54D2F582/54D2F620;
 Reference = U34;
 ValeurCmp = or3d;
-IdModule  = 211ARelay;
+IdModule  = custom:211ARelay;
 EndCmp
 
 EndListe
